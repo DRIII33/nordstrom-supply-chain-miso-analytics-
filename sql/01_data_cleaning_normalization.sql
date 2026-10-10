@@ -34,4 +34,4 @@ SELECT
   COALESCE(TRIM(fulfillment_status), 'Unknown') AS fulfillment_status,
   SAFE_DIVIDE(SAFE_CAST(allocated_units AS FLOAT64), SAFE_CAST(requested_units AS FLOAT64)) AS rp_fill_rate
 FROM `driiiportfolio.nordstrom_supply_chain.raw_store_replenishment`
-WHERE replenishment_id IS NOT NULL;
+WHERE replenishment_id IS NOT NULL; 
