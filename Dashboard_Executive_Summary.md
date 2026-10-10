@@ -1,10 +1,10 @@
 # Dashboard Executive Summary: MISO Inventory & Supplier Operations
 
 ## Dashboard Purpose
-Built for Merch Ops, Inbound Flow, and Replenishment (RP) leadership, this Looker Studio dashboard provides real-time visibility into inventory velocity, vendor compliance, and store-level fulfillment efficiency.
+Designed for Merch Ops, Inbound Flow, and Replenishment (RP) leadership, this Looker Studio dashboard shifts focus from high-level summaries to **root-cause diagnostics**. It provides real-time visibility into supplier compliance infractions, their direct impact on store fulfillment, and regional distribution bottlenecks.
 
 ## Core Visualizations & Metrics
-1. **Inventory Health Scorecards:** RP Fill Rate (%), Lead Time Variance, and Compliance Infraction Rate.
-2. **Vendor Risk Analysis:** Bar charts highlighting top suppliers causing inbound delays and compliance infractions.
-3. **Store Fulfillment Trends:** Time-series tracking of requested vs. allocated units across regional retail locations.
-4. **Actionable Insights:** Empowers operational leads to adjust safety stock thresholds and proactively manage vendor performance SLAs.
+1. **Global Inventory Health Scorecards:** Overall RP Fill Rate (%), Compliance Infraction Rate (%), and Total Partial Fulfillment Events.
+2. **Supplier Risk Analysis (Pareto Chart):** Highlights repeat vendor offenders causing ASN and ticketing infractions.
+3. **Diagnostic Breakdown (Stacked Bar Chart):** Visualizes the statistical dependency between compliance failure types and store fulfillment statuses.
+4. **Regional Store Performance:** Ranks retail locations by Partial Fulfillment Rates (%) to pinpoint regional distribution friction.
