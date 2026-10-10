@@ -52,6 +52,7 @@ print("\n--- Operational Insight: Top Regional Store Bottlenecks (Stockout Rates
 store_perf = df.groupby('store_id').agg(
     total_orders=('fulfillment_status', 'count'),
     stockouts=('fulfillment_status', lambda x: (x == 'Stockout').sum())
-).reset()
+).reset_index()
+
 store_perf['stockout_rate_%'] = (store_perf['stockouts'] / store_perf['total_orders']) * 100
 print(store_perf.sort_values(by='stockout_rate_%', ascending=False).head(5))
