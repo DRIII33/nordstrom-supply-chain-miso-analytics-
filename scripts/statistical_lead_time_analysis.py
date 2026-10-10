@@ -47,12 +47,12 @@ else:
     print(f"Result: Fail to Reject the Null Hypothesis (p = {p_val:.4e} > {alpha}).")
     print("Conclusion: No statistically significant dependency detected between compliance status and store fulfillment status.")
 
-# 6. Regional Bottleneck Summary (Store-level stockout rates)
-print("\n--- Operational Insight: Top Regional Store Bottlenecks (Stockout Rates) ---")
+# 6. Regional Bottleneck Summary (Store-level Partial Fulfillment Rates)
+print("\n--- Operational Insight: Top Regional Store Bottlenecks (Partial Fulfillment Rates) ---")
 store_perf = df.groupby('store_id').agg(
     total_orders=('fulfillment_status', 'count'),
-    stockouts=('fulfillment_status', lambda x: (x == 'Stockout').sum())
+    partial_fulfillments=('fulfillment_status', lambda x: (x == 'Partially Fulfilled').sum())
 ).reset_index()
 
-store_perf['stockout_rate_%'] = (store_perf['stockouts'] / store_perf['total_orders']) * 100
-print(store_perf.sort_values(by='stockout_rate_%', ascending=False).head(5))
+store_perf['partial_fulfillment_rate_%'] = (store_perf['partial_fulfillments'] / store_perf['total_orders']) * 100
+print(store_perf.sort_values(by='partial_fulfillment_rate_%', ascending=False).head(5))
