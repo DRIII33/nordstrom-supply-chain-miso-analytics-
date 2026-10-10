@@ -9,6 +9,12 @@ This repository contains an end-to-end data analytics and engineering project bu
 * `/scripts`: Google Colab notebooks for synthetic data generation and statistical diagnostic analysis.
 * `/dashboard`: Looker Studio schema and operational dashboard configuration specifications.
 
+## Dashboard Snapshot
+* **Intro Page**
+  <img src="dashboard_images_assets/MISO_DataAnalyst3.png" alt="Alt Text" width="500">  
+* **Page 1** -`Executive Overview & Root Cause Diagnostics`
+  <img src="dashboard_images_assets/MISO_DataAnalyst3_Page1.png" alt="Alt Text" width="500">  
+
 ## Getting Started
 1. Clone the repository.
 2. Execute `synthetic_data_generator.ipynb` in Google Colab to generate relational test CSVs.
