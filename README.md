@@ -11,8 +11,12 @@ This repository contains an end-to-end data analytics and engineering project bu
 
 ## Dashboard Snapshot
 * **Intro Page**
-  <img src="dashboard_images_assets/MISO_DataAnalyst3.png" alt="Alt Text" width="500">  
+
+  <img src="dashboard_images_assets/MISO_DataAnalyst3.png" alt="Alt Text" width="500">
+
+  
 * **Page 1** -`Executive Overview & Root Cause Diagnostics`
+
   <img src="dashboard_images_assets/MISO_DataAnalyst3_Page1.png" alt="Alt Text" width="500">  
 
 ## Getting Started
